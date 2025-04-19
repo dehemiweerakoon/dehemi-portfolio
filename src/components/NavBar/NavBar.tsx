@@ -97,12 +97,12 @@ function NavBar() {
                 </HashLink>
               </div>
               <div>
-                <Link
+                <HashLink
                   className="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                  to="#"
+                  to="/#projects"
                 >
                   Projects
-                </Link>
+                </HashLink>
               </div>
               <div>
                 <Link

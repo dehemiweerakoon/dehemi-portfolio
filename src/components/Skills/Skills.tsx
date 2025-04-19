@@ -19,7 +19,7 @@ const Skills = () => {
      
     
         <div className="lg:flex md:grid md:grid-cols-5 grid grid-cols-3 sm:mx-0 mx-2 items-center justify-center my-10 lg:flex-row gap-3">
-          <div className="backdrop-blur-2xl w-20 sm:w-30 bg-white/15 border-t-2 text-center border-pink-400 flex-flex-col justify-center items-center sm:p-7 p-3 rounded-xl shadow-lg transition-transform duration-300 hover:scale-110 hover:border-pink-400 hover:border-2">
+          <div className="backdrop-blur-2xl w-20 sm:w-30 bg-white/15 border-t-2 text-center border-pink-400 flex-flex-col justify-center items-center sm:p-7 p-3 rounded-xl shadow-lg transition-transform duration-300 hover:scale-110 hover:border-pink-400 hover:border-2 ">
             <i className="devicon-react-original colored sm:text-4xl "></i>
             <h1 className="text-xs sm:text-base"> React JS</h1>
           </div>
