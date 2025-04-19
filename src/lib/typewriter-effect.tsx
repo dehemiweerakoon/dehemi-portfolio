@@ -125,16 +125,18 @@ export const TypewriterEffectSmooth = ({
       const timeout = setTimeout(() => {
         setCurrentLine((prev) => prev + 1);
         setCurrentCharIndex(0);
-      }, 500); // delay before typing the next line
+      }, 50); // delay before typing the next line
       return () => clearTimeout(timeout);
     }
   }, [currentCharIndex, currentLine, words]);
 
   return (
-    <div className={cn("flex space-x-1 my-6 max-w-90", className)}>
-      <div className="overflow-hidden pb-0">
+    <div className={cn(" my-3 max-w-full text-2xl sm:text-2xl md:text-5xl lg:text-4xl xl:text-4xl font-bold", className)}>
+ 
+      <div className="overflow-hidden pb-2">
+        
         <div
-          className="text-2xl sm:text-2xl md:text-5xl lg:text-5xl xl:text-4xl font-bold"
+          className=""
           style={{ whiteSpace: "pre-line" }}
         >
           {words.slice(0, currentLine + 1).map((word, wordIndex) => (

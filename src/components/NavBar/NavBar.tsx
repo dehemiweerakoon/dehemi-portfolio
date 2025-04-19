@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
+import { HashLink } from "react-router-hash-link";
 function NavBar() {
   const [show, setShow] = useState(false);
 
   return (
     <>
-      <header className="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-7 ">
+      <header className="flex flex-wrap lg:justify-start lg:flex-nowrap z-50 w-full py-5 sticky top-0bg-gradient-to-br from-violet-950 to-black rounded-2xl ">
         <nav className="relative  w-full flex flex-wrap lg:grid lg:grid-cols-12 basis-full items-center px-3 md:px-6 lg:px-8 mx-auto">
           <div className="lg:col-span-3 flex items-center">
             <Link
@@ -80,28 +80,28 @@ function NavBar() {
           >
             <div className="flex flex-col gap-y-4 gap-x-0 lg:flex-row lg:justify-center lg:items-center lg:gap-y-0 lg:gap-x-7">
               <div>
-                <Link
-                  className="relative inline-block text-black focus:outline-hidden before:absolute before:bottom-0.5 before:start-0 before:-z-1 before:w-full before:h-1 before:bg-lime-400 dark:text-white"
-                  to="#"
+                <HashLink
+                  className="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                  to="/#about"
                   aria-current="page"
                 >
-                  Work
-                </Link>
-              </div>
-              <div>
-                <Link
-                  className="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                  to="#"
-                >
-                  Services
-                </Link>
-              </div>
-              <div>
-                <Link
-                  className="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
-                  to="#"
-                >
                   About
+                </HashLink>
+              </div>
+              <div>
+                <HashLink
+                  className="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                  to="/#skills"
+                >
+                  Skills
+                </HashLink>
+              </div>
+              <div>
+                <Link
+                  className="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
+                  to="#"
+                >
+                  Projects
                 </Link>
               </div>
               <div>
@@ -109,7 +109,7 @@ function NavBar() {
                   className="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
                   to="#"
                 >
-                  Careers
+                  Education
                 </Link>
               </div>
               <div>
@@ -117,7 +117,7 @@ function NavBar() {
                   className="inline-block text-black hover:text-gray-600 focus:outline-hidden focus:text-gray-600 dark:text-white dark:hover:text-neutral-300 dark:focus:text-neutral-300"
                   to="#"
                 >
-                  Blog
+                  Contact Us
                 </Link>
               </div>
             </div>
