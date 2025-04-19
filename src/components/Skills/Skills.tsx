@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <>
       <div
-        className="relative justify-center items-center rounded-lg bg-gradient-to-tr from-violet-950 to-black h-auto p-2 "
+        className="relative justify-center items-center rounded-lg bg-gradient-to-b from-violet-950 to-black h-auto py-10 "
         id="skills"
       >
         <div className=" flex flex-row justify-center items-center">

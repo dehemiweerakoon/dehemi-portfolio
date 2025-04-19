@@ -10,6 +10,7 @@ export const HoverEffect = ({
   items: {
     title: string;
     description: string;
+    img: string;
     link: string;
   }[];
   className?: string;
@@ -49,7 +50,7 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
+            <CardTitle>{item.title}</CardTitle> <CardImage src={item.img} />
             <CardDescription>{item.description}</CardDescription>
           </Card>
         </a>
@@ -101,11 +102,29 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm text-justify",
         className
       )}
     >
       {children}
     </p>
+  );
+};
+export const CardImage = ({
+  className,
+  src,
+}: {
+  className?: string;
+  src: string;
+}) => {
+  return (
+    <img
+      className={cn(
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm rounded",
+        className
+      )}
+      alt=""
+      src={"/" + src}
+    />
   );
 };

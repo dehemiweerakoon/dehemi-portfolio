@@ -48,7 +48,7 @@ export function HeroSection() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-between py-4 lg:py-0 mt-7 h-auto mb-30">
+      <section className="relative flex flex-col items-center justify-between py-4 lg:py-0 mt-7 h-auto ">
         <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-50 gap-y-8 lg:mx-10">
           <div className="order-2 lg:order-2 border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r dark:bg-white/20  dark:backdrop-grayscale-4">
             <div className="flex flex-row">

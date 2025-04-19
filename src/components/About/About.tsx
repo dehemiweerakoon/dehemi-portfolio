@@ -4,7 +4,7 @@ import { cn } from "../../lib/utils"; // only if you're using cn()
 const About = () => {
   return (
     <>
-    <div className="h-auto w-auto sm:mx-5 mx-4 bg-gradient-to-tr from-violet-950 to-black relative " id="about">
+    <div className="h-auto w-auto sm:mx-5 mx-4 bg-gradient-to-tr from-violet-950 to-black relative py-20 " id="about">
       <div
         className={cn(
           "absolute inset-0 z-0",
