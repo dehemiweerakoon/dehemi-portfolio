@@ -25,8 +25,8 @@ export function MeteorsDemo({
 }) {
   return (
     <div className="">
-      <div className="relative w-full max-w-lg">
-        <div className="absolute inset-0 h-full w-full scale-[0.80] transform rounded-full bg-red-500 bg-gradient-to-r from-blue-500 to-teal-500 blur-3xl" />
+      <div className="relative w-full max-w-lg hover:scale-105 transition-transform  duration-300">
+        <div className="absolute  inset-0 h-full w-full scale-[0.80] transform rounded-full bg-red-500 bg-gradient-to-r from-blue-500 to-teal-500 blur-3xl" />
         <div className="relative flex h-full flex-col items-start justify-end overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 px-4 py-8 shadow-xl">
           <div className=" flex flex-row  items-center justify-center">
               <h1 className="relative z-50 mb-4 text-xl font-bold text-white">
@@ -41,13 +41,8 @@ export function MeteorsDemo({
           <p className="relative z-50 mb-4 text-base font-normal text-slate-300">
             {description}
           </p>
-
-          <button className="rounded-lg border border-gray-500 px-4 py-1 text-gray-300">
-            Explore
-          </button>
-
           {/* Meaty part - Meteor effect */}
-          <Meteors number={20} />
+          <Meteors number={80} />
         </div>
       </div>
     </div>
@@ -58,7 +53,7 @@ const Education = () => {
   return (
     <>
       <div className="py-10 px-2 " id="education">
-        <div className=" flex flex-row justify-center items-center text-2xl font-bold  ">
+        <div className=" flex flex-row justify-center items-center text-3xl font-bold  ">
           Education
         </div>
         <div className="sm:flex sm:flex-row sm:justify-start sm:items-center gap-0 mt-10 overflow-hidden">

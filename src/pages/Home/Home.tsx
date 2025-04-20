@@ -1,4 +1,5 @@
 import About from "../../components/About/About";
+import ContactUs from "../../components/ContactUs/ContactUs";
 import Education from "../../components/Education/Education";
 import NavBar from "../../components/NavBar/NavBar";
 import Projects from "../../components/Projects/Projects";
@@ -28,6 +29,7 @@ const Home = () => {
       <Skills/>
       <Projects/>
       <Education/>
+      <ContactUs/>
     </>
   );
 };
